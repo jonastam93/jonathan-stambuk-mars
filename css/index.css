@@ -70,13 +70,8 @@ p {
     margin-bottom: 25px;
 }
 /* Displays social links in a horizontal Flexbox layout */
-#Connect ul {
+#flex {
     display: flex;
-    justify-content: center;
-    gap: 25px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
 }
 /* Keeps each list item aligned properly */
 #Connect li {
@@ -101,8 +96,8 @@ p {
    Media Queries (Mobile-First)
    ========================= */
 
-/* Tablet styles (768px and up) */
-@media (min-width: 768px) {
+/* Tablet styles (500px and up) */
+@media (max-width: 500px) {
     /* Increase heading sizes for tablet screens */
     h1 {
         font-size: 80px;
