@@ -70,16 +70,7 @@ p {
     margin-bottom: 25px;
 }
 /* Displays social links in a horizontal Flexbox layout */
-#Connect ul {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-/* Keeps each list item aligned properly */
-#Connect li {
+#flex {
     display: flex;
 }
 /* Styles social media links */
@@ -173,5 +164,43 @@ p {
         padding: 15px 25px;
         background-color: darkcyan;
         color: white;
+    }
+}
+
+/* Skills Section - Grid Layout */
+#Skills ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#Skills li {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+}
+
+@media (min-width: 600px) {
+    #Skills ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #Skills li {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 900px) {
+    #Skills ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #Skills li {
+        padding: 1.25rem;
     }
 }
