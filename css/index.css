@@ -204,3 +204,69 @@ p {
         padding: 1.25rem;
     }
 }
+
+/*Message Section*/
+#LeaveMessage {
+    padding: 2rem;
+}
+
+/*Form Layout*/
+form[name="leave_message"] {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    gap: 1rem;
+}
+
+/*Labels*/
+form[name="leave_message"] label {
+    font-weight: 600;
+}
+
+/*Inputs and Textarea*/
+form[name="leave_message"] input,
+form[name="leave_message"] textarea {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/*Make Textarea Taller*/
+form[name="leave_message"] textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/*Sumit Button*/
+form[name="leave_message"] button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+/*Hover Effect*/
+form[name="leave_message"] button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 500px) {
+    form[name="leave_message"] {
+        max-width: 100%;
+    }
+    
+    form[name="leave_message"] input,
+    form[name="leave_message"] textarea {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+    
+    form[name="leave_message"] button {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+}
