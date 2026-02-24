@@ -67,4 +67,17 @@ fetch('https://api.github.com/users/jonastam93/repos')
 })
 .catch(error => {
         console.error("Error fetching repos:", error);
+
+        const projectSection = document.getElementById("Projects");
+        const projectList = projectSection.querySelector("ul");
+
+        // Clear existing content
+        projectList.innerHTML = "";
+        
+        // Error Message 
+        const errorMessage = document.createElement("p");
+        errorMessage.innerText = "Sorry, we couldn't load the projects right now. Please try again later.";
+
+        // Append message to Projects section
+        projectSection.appendChild(errorMessage);
 });
